@@ -36,6 +36,11 @@ function fetchArticles() {
       updateArticlesMarkup(hits);
       loadMoreBtn.hide();
     }
+
+    window.scrollTo({
+      top: document.documentElement.offsetHeight,
+      behavior: 'smooth',
+    });
   });
 }
 
